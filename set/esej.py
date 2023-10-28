@@ -1,3 +1,5 @@
+# https://open.kattis.com/problems/esej
+
 import random
 import string
 import math
@@ -8,7 +10,6 @@ def generate_word():
     random_chars = random.choices(string.ascii_lowercase, k=word_length)
     random_word = ''.join(random_chars)
     return random_word
-
 
 # handle input
 A, B = map(int, input().split())
