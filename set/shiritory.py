@@ -1,11 +1,15 @@
 # https://open.kattis.com/problems/shiritori
 
+from sys import stdin
+
 # input
 n = int(input())
-words = []
-for i in range(n):
-    word = input()
-    words.append(word)
+# words = []
+# for i in range(n):
+#     word = input()
+#     words.append(word)
+
+words = [stdin.readline().strip() for _ in range(n)]
 
 # initiate the 'seen' set and first last_letter
 seen = set()
